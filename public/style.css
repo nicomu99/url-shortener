@@ -1,46 +1,70 @@
 body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  color: #222;
-  background-color: #fff;
-  text-align: center;
-  line-height: 1.4em;
+  font-family: "Urbanist", sans-serif;
+  color: white;
+  background: #1E1E1E;
+  margin: 0;
 }
 
-main {
+.container {
   padding: 0;
-  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-h3 {
-  margin-top: 30px;
+.container h1 {
+  text-transform: uppercase;
 }
-
-
-
-.user-stories li {
-  margin-bottom: 1em;
+.container h1, .container h2 {
+  color: #CE9178;
 }
-
-a {
-  color: #2574a9;
-}
-
-form {
-  margin: 10px auto;
-  padding: 20px;
-  max-width: 600px;
-}
-
-label {
-  margin-right: 10px;
-}
-
-input {
-  padding: 5px;
-}
-
-input[type='text'] {
-  width: 220px;
+.container .center {
   text-align: center;
 }
+.container .flex-column {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+}
+.container fieldset {
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container form input[type=submit] {
+  background-color: #9CDCFE;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  transition: 300ms linear;
+}
+.container form input[type=submit]:hover {
+  opacity: 0.6;
+}
+.container form input[type=text] {
+  padding: 10px;
+  border: none;
+  width: 500px;
+  border-radius: 10px;
+}
+.container code {
+  display: inline-block;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  padding: 10px;
+  background-color: #1E1E1E;
+  color: white;
+  text-align: left;
+  width: 350;
+  line-height: 20px;
+}
+.container code .property-values {
+  color: #CE9178;
+}
+.container code .object-keys {
+  color: #9CDCFE;
+}
+
+/*# sourceMappingURL=style.css.map */

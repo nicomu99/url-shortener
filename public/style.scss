@@ -1,0 +1,84 @@
+$code-bg: #1E1E1E;
+$object-keys: #9CDCFE;
+$property-values: #CE9178;
+
+body {
+	font-family: 'Urbanist', sans-serif;
+	color: white;
+    background: $code-bg;
+    margin: 0;
+}
+
+.container {
+	padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        text-transform: uppercase;
+    }
+
+    h1, h2 {
+        color: $property-values;
+    }
+
+    .center {
+        text-align: center
+    }
+    
+    .flex-column {
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    fieldset {
+        width: 700px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    form {
+        input[type=submit] {
+            background-color: $object-keys;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            transition: 300ms linear;
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+        input[type=text] {
+            padding: 10px;
+            border: none;
+            width: 500px;
+            border-radius: 10px;
+        }
+    }
+
+    code {
+        display: inline-block;
+        font-family: 'Courier New', monospace;
+        font-size: 14px;
+        padding: 10px;
+        background-color: $code-bg;
+        color: white;
+        text-align: left;
+        width: 350;
+        line-height: 20px;
+
+        .property-values {
+            color: $property-values;
+        }
+        
+        .object-keys {
+            color: $object-keys;
+        }
+    }
+}
